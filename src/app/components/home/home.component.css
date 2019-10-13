@@ -1,0 +1,15 @@
+.hbTest {
+  /* height: 350px;
+  width: auto;
+  overflow-y: scroll; */
+  position: relative;
+}
+
+div#partnersCatalog {
+  margin-left: 30%;
+}
+
+object#catalogJe{
+  align-items: center;
+  height: 350px;
+}
