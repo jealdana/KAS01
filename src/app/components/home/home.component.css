@@ -27,7 +27,7 @@ h4{
 }
 
 
-.thumbnail{
+.thumbnail-img{
     width: 200px;
     height: 200px;
     overflow: auto;
@@ -35,4 +35,12 @@ h4{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+}
+.thumbnail-text {
+  width: 200px;
+  overflow: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
