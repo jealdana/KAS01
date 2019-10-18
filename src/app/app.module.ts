@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // Services
-import { bootService } from './services/boots.service';
+import { BootService } from './services/boots.service';
 
 
 // Routing
@@ -26,7 +26,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     BrowserModule,
     app_routing
   ],
-  providers: [bootService],
+  providers: [BootService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

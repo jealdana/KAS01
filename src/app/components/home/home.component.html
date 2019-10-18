@@ -1,51 +1,31 @@
-<app-carousel></app-carousel>
 
 <div data-spy="scroll" data-target="#example" data-offset="10" class="hbTest">
-  <h4 id="fat">Type of products</h4>
-  <ul class="list-group list-group-horizontal">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-  </ul>
-  <p>...</p>
-  <h4 id="mdo">Products</h4>
-  <div class="card-columns">
-  <div *ngFor="let item of ['1','1','1','1']" class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div id="home" class="section1">
+    <app-carousel></app-carousel>
+    <h4>Our type of products</h4>
+    <ul class="list-group list-group-horizontal row">
+      <li class="list-group-item border-0 col-sm"><img src="../../../assets/img/products/1.jpeg" class="thumbnail " alt=""><br><p style="text-align:center;">Cras justo odio</p></li>
+      <li class="list-group-item border-0 col-sm"><img src="../../../assets/img/products/2.jpeg" class="thumbnail " alt=""><br><p style="text-align:center;">Dapibus ac facilisis in</p></li>
+      <li class="list-group-item border-0 col-sm"><img src="../../../assets/img/products/3.jpeg" class="thumbnail " alt=""><br><p style="text-align:center;">Morbi leo risus</p></li>
+    </ul>
+  </div>
+  <div id="products" class="section2">
+    <h4>Products</h4>
+    <div class="card-columns">
+      <div *ngFor="let item of boots;" class="card" style="width: 18rem;">
+        <div class="card-body">
+          <img [src]="item.img" class="card-img-top thumbnail " [alt]="item.name">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
     </div>
   </div>
-  </div>
-  <h4 id="partners" class="partners">Partners</h4>
-  <div id="partnersCatalog" class="container">
-    <object id="catalogJe" data="https://img1.wsimg.com/blobby/go/debfa7fa-61c0-42d7-99c3-dc563f4143aa/downloads/1coj879e0_792120.pdf?ver=1551979219074" type="application/pdf">
-    <iframe src="https://docs.google.com/viewer?url=https://img1.wsimg.com/blobby/go/debfa7fa-61c0-42d7-99c3-dc563f4143aa/downloads/1coj879e0_792120.pdf?ver=1551979219074&embedded=true"></iframe>
-    </object>
+  <div id="partners" class="section3">
+    <h4>Partners</h4>
+    <div id="partnersCatalog" class="container">
+      <object id="catalogJe" data="https://img1.wsimg.com/blobby/go/debfa7fa-61c0-42d7-99c3-dc563f4143aa/downloads/1coj879e0_792120.pdf?ver=1551979219074" type="application/pdf">
+        <iframe src="https://docs.google.com/viewer?url=https://img1.wsimg.com/blobby/go/debfa7fa-61c0-42d7-99c3-dc563f4143aa/downloads/1coj879e0_792120.pdf?ver=1551979219074&embedded=true"></iframe>
+      </object>
+    </div>
   </div>
 </div>
-
-<script>
-  $(document).ready(function(){
-    // Add scrollspy to <body>
-    $('body').scrollspy({target: ".navbar", offset: 50});
-    // Add smooth scrolling on all links inside the navbar
-    $("#navbar a").on('click', function(event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-        // Store hash
-        var hash = this.hash;
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      }  // End if
-    });
-  });
-</script>
