@@ -1,6 +1,6 @@
 
 <div data-spy="scroll" data-target="#example" data-offset="10" class="hbTest">
-  <div id="home" class="section1">
+  <div id="home" class="section">
     <app-carousel></app-carousel>
     <h4>Our type of products</h4>
     <ul class="list-group list-group-horizontal row">
@@ -9,20 +9,20 @@
       <li class="list-group-item border-0 col-sm"><img src="../../../assets/img/products/3.jpeg" class="thumbnail " alt=""><br><p style="text-align:center;">Morbi leo risus</p></li>
     </ul>
   </div>
-  <div id="products" class="section2">
+  <div id="products" class="section">
     <h4>Products</h4>
     <div class="card-columns">
-      <div *ngFor="let item of boots;" class="card" style="width: 18rem;">
-        <div class="card-body">
+      <div *ngFor="let item of boots;" class="card border-0" style="width: 18rem;">
+        <div class="card-body row">
           <img [src]="item.img" class="card-img-top thumbnail " [alt]="item.name">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     </div>
   </div>
-  <div id="partners" class="section3">
+  <div id="partners" class="section">
     <h4>Partners</h4>
-    <div id="partnersCatalog" class="container">
+    <div id="partnersCatalog" class="container d-block">
       <object id="catalogJe" data="https://img1.wsimg.com/blobby/go/debfa7fa-61c0-42d7-99c3-dc563f4143aa/downloads/1coj879e0_792120.pdf?ver=1551979219074" type="application/pdf">
         <iframe src="https://docs.google.com/viewer?url=https://img1.wsimg.com/blobby/go/debfa7fa-61c0-42d7-99c3-dc563f4143aa/downloads/1coj879e0_792120.pdf?ver=1551979219074&embedded=true"></iframe>
       </object>

@@ -1,8 +1,9 @@
 .hbTest {
-  height: 500px;
+  height: 750px;
   width: 100%;
   overflow-y: scroll;
   position: relative;
+  overflow-x: hidden;
 }
 
 div#partnersCatalog {
@@ -13,13 +14,16 @@ object#catalogJe{
   height: 350px;
 }
 
--section1{
-  width: 100%;
-  background-image: url("../../../assets/img/products/1.jpeg");
+.section1{
+  height: auto;
+  /* background-image: url("../../../assets/img/products/1.jpeg"); */
+
 }
 
 h4{
   text-align:center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 
