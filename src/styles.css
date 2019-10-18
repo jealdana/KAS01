@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-height: auto;
 background-image: url("./assets/img/backgrounds/bg1.jpg");
-margin: 0; height: 100%; overflow: hidden
+margin: 0; height: 100%; overflow: visible;
 }
 
-html{margin: 0; height: 100%; overflow: hidden}
+html{margin: 0; height: 100%; overflow: hidden;}

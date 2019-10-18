@@ -4,6 +4,7 @@
   overflow-y: scroll;
   position: relative;
   overflow-x: hidden;
+  padding-bottom: 350px;
 }
 
 .item{
