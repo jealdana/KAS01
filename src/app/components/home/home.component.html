@@ -4,15 +4,15 @@
     <app-carousel></app-carousel>
     <h4>Our type of products</h4>
     <ul class="list-group list-group-horizontal row">
-      <li class="list-group-item border-0 col-sm"><img src="../../../assets/img/products/1.jpeg" class="thumbnail-img " alt=""><br><p style="text-align:center;">Cras justo odio</p></li>
-      <li class="list-group-item border-0 col-sm"><img src="../../../assets/img/products/2.jpeg" class="thumbnail-img " alt=""><br><p style="text-align:center;">Dapibus ac facilisis in</p></li>
-      <li class="list-group-item border-0 col-sm"><img src="../../../assets/img/products/3.jpeg" class="thumbnail-img " alt=""><br><p style="text-align:center;">Morbi leo risus</p></li>
+      <li class="list-group-item border-0 col-sm item"><img src="../../../assets/img/products/1.jpeg" class="thumbnail-img " alt=""><br><p style="text-align:center;">Cras justo odio</p></li>
+      <li class="list-group-item border-0 col-sm item"><img src="../../../assets/img/products/2.jpeg" class="thumbnail-img " alt=""><br><p style="text-align:center;">Dapibus ac facilisis in</p></li>
+      <li class="list-group-item border-0 col-sm item"><img src="../../../assets/img/products/3.jpeg" class="thumbnail-img " alt=""><br><p style="text-align:center;">Morbi leo risus</p></li>
     </ul>
   </div>
   <div id="products" class="section">
     <h4>Products</h4>
     <div class="card-columns">
-      <div *ngFor="let item of boots;" class="card border-0">
+      <div *ngFor="let item of boots;" class="card item border-0">
         <div class="card-body row">
           <img [src]="item.img" class="card-img-top thumbnail-img " [alt]="item.name">
           <p class="card-text thumbnail-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -22,7 +22,7 @@
   </div>
   <div id="partners" class="section">
     <h4>Partners</h4>
-    <div class="partner">
+    <div class="partner item">
       <h5>JE-VER</h5>
       <object data="https://img1.wsimg.com/blobby/go/debfa7fa-61c0-42d7-99c3-dc563f4143aa/downloads/1coj879e0_792120.pdf?ver=1551979219074" type="application/pdf">
         <iframe class="thumbnail-img" src="https://docs.google.com/viewer?url=https://img1.wsimg.com/blobby/go/debfa7fa-61c0-42d7-99c3-dc563f4143aa/downloads/1coj879e0_792120.pdf?ver=1551979219074&embedded=true"></iframe>
